@@ -19,7 +19,11 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        sourceCompatibility = JavaVersion.VERSION_1_17
+        targetCompatibility = JavaVersion.VERSION_1_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
 
